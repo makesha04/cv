@@ -18,7 +18,8 @@
  ***
  ## Code example:
  It is necessary to develop a program that includes all the data and operators(<<,>> etc.) necessary for solving the problem.Provide for the handling of exceptional situations. Find the sum and difference of two multi-valued integers.
-```class Cislo
+``` c++
+class Cislo
 {
 private:
  int x;
