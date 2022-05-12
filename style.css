@@ -11,6 +11,7 @@ body{
     justify-content: space-between;
     font-size:18px;
     font-weight:400;
+    line-height: 1.5;
 
     
 }
@@ -20,7 +21,7 @@ body{
   justify-content:space-between;
 }
 .section {
-  border-bottom:1px solid #672f2f;
+  border-bottom:5px solid hsl(30, 4%, 78%);
    padding:10px 10px 35px;
    width:calc(50% - 20px)
 }
@@ -89,8 +90,7 @@ a:hover:after {
 h1{
   font-family: 'PT Sans Narrow', sans-serif;
   text-align:justify;
-  
-  font-size: xx-large;
+ font-size:xx-large;
 }
 span{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -114,6 +114,24 @@ img{
   display:flex;
   flex-direction:column;
   justify-content:center;
-  text-align:center;
+  text-align:center;}
+.contacts-item:before{
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 24px;
+    left: 0;
+    position:absolute;
+    width:24px;
   }
- 
+.contacts-item:first-child:before{background-image:url("./assets/svg/map.svg") ;
+border: 1px;
+right: 1px;
+ }
+ .contacts-item:nth-child(2):before{background-image:url("./assets/svg/mail.svg");
+   color:#010902;left:0;width:21px;
+}
+.contacts-item:nth-child(3):before{background-image:url("./assets/svg/numb.svg");
+}
+.contacts-item:nth-child(4):before{background-image:url("./assets/svg/telega.svg")}
+.contacts-item:nth-child(5):before{background-image:url("./assets/svg/github.svg")}
