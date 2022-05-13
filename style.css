@@ -84,9 +84,14 @@ a:hover:after {
 }
 .footer{
   background-color:rgb(153, 155, 157);
-  height:40px;
+  padding:20px;
   align-items:center;
 }
+.footer-container{align-items:center;
+  color:rgb(246, 243, 237);
+  display:flex;
+  justify-content:space-between;
+  margin:0 auto}
 h1{
   font-family: 'PT Sans Narrow', sans-serif;
   text-align:justify;
@@ -110,11 +115,13 @@ img{
   padding:50px 30px 55px;
   width:100%;
 }
+.pre{margin:0;padding:0}
 .section-profile-title{align-content:center;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  text-align:center;}
+  text-align:center;
+  text-transform:uppercase}
 .contacts-item:before{
     background-repeat: no-repeat;
     background-size: contain;
@@ -128,10 +135,24 @@ img{
 border: 1px;
 right: 1px;
  }
- .contacts-item:nth-child(2):before{background-image:url("./assets/svg/mail.svg");
+.contacts-item:nth-child(2):before{background-image:url("./assets/svg/mail.svg");
    color:#010902;left:0;width:21px;
 }
 .contacts-item:nth-child(3):before{background-image:url("./assets/svg/numb.svg");
 }
 .contacts-item:nth-child(4):before{background-image:url("./assets/svg/telega.svg")}
 .contacts-item:nth-child(5):before{background-image:url("./assets/svg/github.svg")}
+.section-list{
+  list-style: none;
+  padding:0;
+  margin: 0;
+  
+}
+.section-item::before{border:1px solid #998299;
+  border-radius:50%;
+  content:"";
+  height:10px;
+  left:0;
+  position:absolute;
+  width:10px}
+.section-item span{color:#998299}
