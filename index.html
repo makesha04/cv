@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class = "header">
+        <div class ="container header-container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                  <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+              </nav>
+              
+        </div>
+    </header>    
+    <class = "main">
+        <div class="container main-container">
+        <section class="section section-profile" id="profile">
+            <img src="./assets/img/1.jpg" width="400" height="400" alt="Yana" class="section-profile-logo">
+        <div class="section-profile-title">
+            <h1 class="section-title main-title">Yana <span>Makeeva</span> </h1>
+            <h2 class="section-subtitle">information systems manager</h2></div>
+        </section>
+        <section class="section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <u1 class="section-list">
+                <li class="section-item contacts-item">
+                  Vitebsk, Belarus  </li>
+                <li class="section-item contacts-item">
+                    email: <a href="mailto:makeeva.yana04@gmail.com"style="color:#666;">makeeva.yana04@gmail.com</a>
+                </li>
+                <li class="section-item contacts-item">
+                    phone: <a href="tel:+375333242397"style="color:#666;">+375(33)324-23-97</a>
+                </li>
+                <li class="section-item contacts-item">
+                    telegram: <a href="https://telegram.me/makesha_04"style="color:#666;">@makesha_04</a>
+                </li>
+                <li class="section-item contacts-item">
+                    Github: <a href="https://github.com/makesha04"style="color:#666;">makesha04</a>
+                </li>
+            </u1>   
+        </section>
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-list">
+                <li class="section-item">C++</li>
+                <li class="section-item"> Theory and simple codes on Accembler</li>
+                <li class="section-item"> Adobe Photoshop, Inskape</c></li>
+                <li class="section-item"> Microsoft World, Excel, Access</li></ul></section>
+        </section>
+        <section class="section" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>My acquaintance with information technology, programming and economics began in September 2021. I like to learn and learn new things. At first I may be afraid of difficulties, but in the end I cope with them - this is a kind of challenge for me. I like to work in a team and easily find an approach to people. I am sociable, responsible. I like to exchange some useful skills with colleagues.</p>
+        </section>
+        <section class="section" id="code">
+            <h2 class="section-title">Code</h2>
+            <pre class="pre"><code>
+class Cislo{
+ private:
+int x;
+ public:
+ Cislo(int X) { 
+     x = X; }
+Cislo() { x = 0; }
+ friend std::ostream& operator<< (std::ostream& out,
+  const Cislo& d1);
+friend std::istream& operator>> (std::istream& in,
+ Cislo& d1);
+ friend Cislo operator+(const Cislo& d1, 
+ const Cislo& d2);
+friend Cislo operator-(const Cislo& d1, 
+const Cislo& d2);
+int getX() const{
+ return x;}
+ };
+std::ostream& operator<< (std::ostream& out,
+ const Cislo& d1){
+ out /*<< "Одно из чисел="*/ << d1.getX() << endl << endl;
+                 return out;}
+std::istream& operator>> (std::istream& in, Cislo& d1){
+cout << "Введите одно из многозначных чисел " << endl;
+in >> d1.x;
+cout << endl; 
+ if (d1.x < 9  && d1.x > -9) {
+cout << "Введено однозначное число" << endl;
+ system("pause");
+ exit(1); }
+ return in;}
+Cislo operator+(const Cislo& d1, const Cislo& d2){
+ return Cislo(d1.x + d2.x);
+}
+Cislo operator-(const Cislo& d1, const Cislo& d2){
+ return Cislo(d1.x - d2.x);}
+int main(){
+ SetConsoleOutputCP(1251);
+ SetConsoleCP(1251);
+Cislo X1;
+Cislo X2;
+cin >> X1;
+cin >> X2;
+Cislo Sum = X1 + X2;
+Cislo Raz = X1 - X2;
+cout << "Сумма этих чисел=" << Sum;
+cout << "Разность этих чисел=" << Raz;
+            </code>
+        </pre>
+        </section>
+    <section class="section" id="english">
+        <h2 class="section-title">English</h2>
+        <p>B1</p>
+    </section>    
+    <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <p>Vitebsk State University, Faculty of Mathematics and Information Technology</p>
+    </section>
+    </div>
+    </main>
+    <footer class ="footer">
+        <div class ="container footer-container">
+            <div>© 2022 <a href="https://github.com/makesha04" class="github nav-link"style="color:rgb(246, 243, 237);">yanamakeeva</a></div>
+        </div>
+    </footer>
+</body>
+</html>
